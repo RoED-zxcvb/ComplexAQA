@@ -7,6 +7,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class GoogleFlightsTests {
     private WebDriver webDriver;
     private GoogleFlightsSteps googleFlightsSteps;
@@ -17,6 +19,7 @@ public class GoogleFlightsTests {
         googleFlightsSteps = new GoogleFlightsSteps(webDriver);
     }
 
+//    @Tag("web")
     @ParameterizedTest
     @CsvSource({
             "ADB, IST, 1",

@@ -3,6 +3,7 @@ package com.regresService.test.api;
 import com.regresService.steps.RegresUserRequestSteps;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -11,6 +12,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 /**
  * Test class for validating API responses for user requests
  */
+@Tag("API")
 @Epic("User API")
 @Story("Retrieve user information")
 @Feature("User Retrieval")
